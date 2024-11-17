@@ -27,9 +27,8 @@
           </ul>
         </div>
         <div class="hidden md:flex items-center space-x-2 mx-8">
-         
-          <div  @click="useChangeColormode()" class="text-xl text-md shadow-md px-5 py-3 rounded-full cursor-pointer" :class="colorMode.value == 'light' ? 'bg-yellow-300' : 'bg-black'">
-            <Icon :name="colorMode.value == 'light' ? 'material-symbols:sunny-outline-rounded' : 'solar:moon-bold'" size="25px" color="white"/>
+          <div  @click="useChangeColormode()" class="flex items-center justify-center shadow-md text-xl px-5 py-3 cursor-pointer  w-12 h-12 rounded-full " :class="colorMode.value == 'light' ? 'bg-yellow-300' : 'bg-blue-300'">
+            <Icon :name="colorMode.value == 'light' ? 'material-symbols:sunny-outline-rounded' : 'solar:moon-bold'" color="white"/>
           </div>
       
         </div>

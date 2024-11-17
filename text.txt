@@ -1,0 +1,24 @@
+  <!-- <div class="flex mt-4 space-x-4">
+                  <h1 class="text-md font-bold cursor-pointer dark:text-gray-400" :class="options === 'skills' ?  'border-b border-spacing-6 border-red-500' : ''" @click="options = 'skills'">Skills</h1>
+                  <h1 class="text-base font-bold cursor-pointer dark:text-gray-400" :class="options === 'education' ?  'border-b border-spacing-6 border-red-500' : ''" @click="options= 'education'">Education</h1>
+                </div>
+                <div class="flex mt-4 space-x-4 md:space-x-8 dark:text-gray-400" v-if="options == 'skills'">
+                  <div>
+                    <h1>Nuxt</h1>
+                    <h1>Expressjs</h1>
+                    <h1>Mongodb</h1>
+                  </div>
+                  <div>
+                    <h1>HTML5</h1>
+                    <h1>CSS</h1>
+                    <h1>Tailwind</h1>
+                  </div>
+                </div>
+                <div class="dark:text-white mt-3" v-else-if="options == 'education'">
+                  <h1>Diploma in Computer Engineering</h1>
+                </div> -->
+                 <!-- <div class="w-full" v-if="!isShow">
+                <button class="transition ease-in-out delay-100 hover:scale-100 duration-300 bg-black  dark:bg-gray-900 dark:text-gray-400 dark:border-white dark:border-2  p-3 w-full md:w-1/2 text-white rounded-md shadow-md md:hover:bg-white md:hover:text-black hover:border-2 hover:border-black">
+                  Download CV
+                </button>
+              </div> -->
