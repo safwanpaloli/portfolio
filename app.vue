@@ -20,12 +20,17 @@
     </section>
 
     <section class="slide-section">
-      <Footer    />
+      <Footer />
     </section>
 </div>
    </ClientOnly>
 
 </template>
+<script setup lang="ts">
+
+const context = useComposables()
+provide('context', context)
+</script>
 <style scoped>
 .slider-container {
   overflow-y: scroll;

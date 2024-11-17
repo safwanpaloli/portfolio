@@ -33,22 +33,8 @@
           </div>
       
         </div>
-
-
         <!-- mobile device navigation-->
-        <div class="md:hidden flex items-center space-x-2 mx-auto">
-          
-          <!-- <div class="bg-white text-xl font-extrabold text-md shadow-md px-5 py-3 rounded-full dark:bg-gray-900 dark:text-gray-400 dark:border-2 dark:border-white">
-            <span>Menu</span> <Icon name="mdi-light:format-align-justify" size="25px" />
-          </div>   -->
-          <button @click="useChangeColormode()">
-          <div class="text-xl text-md shadow-md px-5 py-3 rounded-full"  :class="colorMode.value == 'light' ? 'bg-yellow-300' : 'bg-black'">
-                <Icon :name="colorMode.value == 'light' ? 'material-symbols:sunny-outline-rounded' : 'material-symbols:dark-mode'" size="25px" color="white"/>
-          </div>
-        </button>
-        </div>
-
-        <!-- -->
+        <mobile-nav />
 
         <div>
         </div>
@@ -56,10 +42,29 @@
     </nav>
   </div>
 </template>
-<script setup>
-const activeNav = "hover:text-red-700 hover:border-b hover:border-black"
-const colorMode = useColorMode()
+<script setup lang="ts">
+import { inject } from 'vue';
 
-const useChangeColormode = () =>  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-
+const {
+  activeNav,
+  colorMode,
+  useChangeColormode
+} = inject('context') as ReturnType<typeof useComposables>
 </script> 
+<style scoped>
+/* Use this if needed for fine-tuning */
+input:checked + label > img {
+  transform: translateY(-85px);
+}
+
+#s1:checked ~ .circle {
+  transform: translateX(-100%);
+}
+#s2:checked ~ .circle {
+  transform: translateX(0);
+}
+#s3:checked ~ .circle {
+  transform: translateX(100%);
+}
+
+</style>
