@@ -3,9 +3,9 @@
     <nav class="navigation-wrapper">
       <div class="flex m-0">
         <div class="flex">
-          <a class="items-center">
-            <img :src="$colorMode.value === 'light' ? 'images/logo.png' : 'images/logowhite.png'" class="h-32" alt="Logo" />
-          </a>
+          <div class="items-center">
+            <img :src="$colorMode.value === 'light' ? 'images/logo.png' : 'images/blacklogo.png'" class="h-32" alt="Logo" />
+          </div>
         </div>
         <div class="hidden md:block w-auto m-auto top-0" id="navbar-default">
           <ul class="flex flex-row bg-slate-100/50 dark:bg-gray-900 dark:text-gray-400 dark:border-white dark:border-2 font-medium items-center text-md shadow-md border-1 rounded-full px-8 pb-3 space-x-8">
@@ -27,8 +27,8 @@
           </ul>
         </div>
         <div class="hidden md:flex items-center space-x-2 mx-8">
-          <div  @click="useChangeColormode()" class="flex items-center justify-center shadow-md text-xl px-5 py-3 cursor-pointer  w-12 h-12 rounded-full " :class="colorMode.value == 'light' ? 'bg-yellow-300' : 'bg-blue-300'">
-            <Icon :name="colorMode.value == 'light' ? 'material-symbols:sunny-outline-rounded' : 'solar:moon-bold'" color="white"/>
+          <div  @click="useChangeColormode()" class="flex items-center justify-center px-5 py-3 cursor-pointer  w-12 h-12 rounded-full" :class="colorMode.value == 'light' ? 'bg-yellow-300' : 'bg-blue-300'">
+            <Icon :name="colorMode.value == 'light' ? 'material-symbols:sunny-outline-rounded' : 'solar:moon-bold'" color="white" size="20px"/>
           </div>
       
         </div>
