@@ -1,0 +1,37 @@
+<template>
+  <div class="landing-page-wrapper flex mt-16">
+    <div class="flex flex-col m-auto items-center text-center">
+      <div class="text-6xl font-bold typewriter">Ta1</div>
+      <div>icons instagram</div>
+    </div>
+    <div class="m-auto">
+      <img src="../public/images/landingimage1.jpg" alt="landingimage" class="max-w-xl object-cover object-center h-1/3 w-96 rounded-lg shadow-xl dark:shadow-gray-800">
+    </div>
+  </div>
+</template>
+<style scoped>
+.typewriter {
+  color: rgb(4, 2, 8);
+  font-family : Oxygen;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end) forwards,
+    /* blink-caret .25s ease-in infinite; */
+    blink-caret 0.5s step-end infinite alternate;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  100% { border-color: rgb(0, 0, 0) }
+}
+</style>

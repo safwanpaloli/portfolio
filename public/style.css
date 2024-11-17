@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: "skyrocket";
+    src: url(../public/fonts/softeraphy.ttf) format("truetype");
+}
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+  @font-face {
+    font-family: 'handwriting';
+    src: url(../public/fonts/handwriting.otf) format('opentype');
+  }
