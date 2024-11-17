@@ -4,7 +4,7 @@
     <div class="landing-page-wrapper flex m-auto">
       <div class="flex flex-col m-auto">
         <div class="text-bold text-3xl md:font-extrabold md:text-4xl xl:text-6xl dark:text-white">I am</div>
-        <div class="typed-out font-extrabold text-4xl md:text-7xl xl:text-8xl text-slate-500">SAFWAN</div>
+        <div class="typed-out font-extrabold text-4xl md:text-7xl xl:text-8xl text-slate-500">asdfsdf</div>
         <div class="font-bold text-xl mt-4 dark:text-white">Full Stack Developer</div>
         <div class="mt-2 flex items-center">
           <a href="https://www.instagram.com/i_am_mern_dev/">
