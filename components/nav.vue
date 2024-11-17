@@ -4,7 +4,7 @@
       <div class="flex m-0">
         <div class="flex">
           <div class="items-center">
-            <img :src="$colorMode.value === 'light' ? 'images/logo.png' : 'images/blacklogo.png'" class="h-32" alt="Logo" />
+            <img :src="colorMode.value === 'light' ? 'images/logo.png' : 'images/logowhite.png'" class="h-32" alt="Logo" />
           </div>
         </div>
         <div class="hidden md:block w-auto m-auto top-0" id="navbar-default">
@@ -26,11 +26,10 @@
             </li>
           </ul>
         </div>
-        <div class="hidden md:flex items-center space-x-2 mx-8">
-          <div  @click="useChangeColormode()" class="flex items-center justify-center px-5 py-3 cursor-pointer  w-12 h-12 rounded-full" :class="colorMode.value == 'light' ? 'bg-yellow-300' : 'bg-blue-300'">
+        <div class="hidden md:flex items-center space-x-2 mx-8 cursor-pointer"  @click="useChangeColormode()">
+          <div class="flex items-center justify-center text-2xl shadow-md w-12 h-12 rounded-full" :class="colorMode.value == 'light' ? 'bg-yellow-300' : 'bg-blue-300'">
             <Icon :name="colorMode.value == 'light' ? 'material-symbols:sunny-outline-rounded' : 'solar:moon-bold'" color="white" size="20px"/>
           </div>
-      
         </div>
         <!-- mobile device navigation-->
         <mobile-nav />

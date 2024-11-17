@@ -26,8 +26,8 @@
       </div>
     </div> 
    <div class="text-center">
-       <div class="hidden go_to_next d-flex justify-center w-10 h-10 text-center m-auto animate__animated animate-bounce animate__slow">
-        <a href="#about" class="block mt-3"> <Icon icon="bx:bxs-down-arrow-circle" width="42" height="42" /> </a>
+       <div class="hidden md:block go_to_next d-flex justify-center w-10 h-10 text-center m-auto animate__animated animate-bounce animate__slow">
+        <a href="#about" class="block mt-3"> <Icon icon="bx:bxs-down-arrow-circle" width="42" height="42" :color="colorMode.value == 'light' ? 'white' : 'black'" /> </a>
        </div>
    </div>
   </div>
@@ -35,6 +35,7 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 
+const {colorMode} = inject('context') as ReturnType<typeof useComposables>
 </script>
 <style scoped>
 
