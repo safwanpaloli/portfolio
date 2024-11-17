@@ -15,9 +15,6 @@
       <Projects/>
     </section>
 
-    <section class="slide-section">
-      <Contactme1 />
-    </section>
     <section  class="slider-section">
       <News/>
     </section>
